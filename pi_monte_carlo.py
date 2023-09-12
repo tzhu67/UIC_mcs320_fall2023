@@ -17,10 +17,10 @@ def estimate_pi(n):
 
 def approx75(n):
     cnt = 0
-    for i in range(10):
+    for i in range(100):
         if 0 < (estimate_pi(n)-3.14159)*10**5 < 1:
             cnt += 1;
-    return cnt >= 8
+    return cnt >= 75
 
 def binary_search_n(m,n):
     if m == n:
