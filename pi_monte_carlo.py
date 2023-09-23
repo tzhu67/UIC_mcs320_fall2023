@@ -18,7 +18,7 @@ def estimate_pi(n):
 def approx75(n):
     cnt = 0
     for i in range(100):
-        if 0 < (estimate_pi(n)-3.14159)*10**5 < 1:
+        if 0 < (estimate_pi(n)-3.14)*10**2 < 1:
             cnt += 1;
     return cnt >= 75
 
@@ -34,5 +34,5 @@ def average_number_of_points_needed():
     return binary_search_n(90000,100000)
 
 #average_number_of_points_needed()
-print('Does {} random points approximate 3.14159 >= 75 times out of 100? {}'\
+print('Does {} random points approximate 3.14 >= 75 times out of 100? {}'\
       .format(sys.argv[1],approx75(int(sys.argv[1]))))
